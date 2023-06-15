@@ -1,0 +1,10 @@
+# Dependencies
+
+google-api-python-client~=2.45
+grpcio-reflection~=1.44
+grpcio-tools~=1.44
+grpcio~=1.44
+protobuf~=3.20
+pytest~=7.1
+pyOpenSSL~=23.2.0
+golang~=0.0.1

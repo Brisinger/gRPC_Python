@@ -1,0 +1,52 @@
+/**
+Protocol buffer type definition.
+**/
+syntax = "proto3";
+
+// Import Timestamp definition from google's protobuf definition.
+import 'google/protobuf/timestamp.proto';
+
+//Location type interface.
+message Location {
+    double lat = 1;
+    double lng = 2;
+}
+
+// RideType enum interface.
+enum RideType {
+    REGULAR = 0;
+    POOL = 1;
+}
+
+// Message type StartRequest
+message StartRequest {
+    int64 car_id = 1;
+    string driver_id = 2;
+    repeated string passenger_ids = 3;
+    RideType type = 4;
+    Location location = 5;
+    google.protobuf.Timestamp time = 6;
+}
+
+// Message type StartResponse
+message StartResponse {
+    string id = 1;
+}
+
+// Message type TrackRequest
+message TrackRequest {
+    int64 car_id = 1;
+    google.protobuf.Timestamp time = 2;
+    Location location = 3;
+}
+
+// Message type TrackResponse
+message TrackResponse {
+    uint64 count = 1;
+}
+
+// Service type interface containing streaming method.
+service Rides {
+    rpc Start(StartRequest) returns (StartResponse) {}
+    rpc Track(stream TrackRequest) returns (TrackResponse) {}
+}

@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files / Protoc generated
+__pycache__/
+*.py[cod]
+rides_pb2*.py
+*$py.class
+*.manifest
+*.spec
+*.pem
+.DS_Store
+node_modules
+.tmp
+npm-debug.log
