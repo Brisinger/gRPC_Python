@@ -1,7 +1,7 @@
 # gRPC in Python
-This repository is based on my understanding from the LinkedIn Learning course gRPC in Python. The full course is available from [LinkedIn Learning][lil-course-url].
+This repository is based on my understanding from the LinkedIn Learning course gRPC in Python. The full course is available from [LinkedIn Learning ](https://www.linkedin.com/learning/grpc-in-python).
 
-![gRPC in Python][lil-thumbnail-url] 
+![gRPC in Python](https://camo.githubusercontent.com/eb33a23632d5e269a40ab053d905f564ab36b0a1c729ffa5ff68687af60b1a99/68747470733a2f2f63646e2e6c796e64612e636f6d2f636f757273652f323437323030312f323437323030312d313635353430373432313832332d313678392e6a7067)
 
 gRPC allows clients and server applications to communicate more efficiently on a connected system. Knowing how to use gRPC can come in handy if you’re programming in a language like Python. In this Repo designed uniquely for Python developers, based on the course by instructor Miki Tebeka, the essentials of gRPC is covered in a lucid hands-on manner to get started with this easy-to-use tool.
 
